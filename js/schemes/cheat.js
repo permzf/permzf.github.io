@@ -1,4 +1,5 @@
 <!--崩溃欺骗-->
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
  var OriginTitle = document.title;
  var titleTime;
  document.addEventListener('visibilitychange', function () {
