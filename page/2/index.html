@@ -21,7 +21,7 @@
 <script id="hexo-configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
-    hostname: new URL('http://yoursite.com').hostname,
+    hostname: new URL('https://hastin-blog.cn').hostname,
     root: '/',
     scheme: 'Mist',
     version: '7.7.0',
@@ -51,7 +51,7 @@
   <meta name="description" content="Hastin的小号">
 <meta property="og:type" content="website">
 <meta property="og:title" content="permzf">
-<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:url" content="https://hastin-blog.cn/page/2/index.html">
 <meta property="og:site_name" content="permzf">
 <meta property="og:description" content="Hastin的小号">
 <meta property="og:locale" content="zh_CN">
@@ -59,7 +59,7 @@
 <meta property="article:tag" content="12121">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/page/2/">
+<link rel="canonical" href="https://hastin-blog.cn/page/2/">
 
 
 <script id="page-configurations">
@@ -170,121 +170,7 @@
   
   	
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5036/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="permzf">
-      <meta itemprop="description" content="Hastin的小号">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="permzf">
-    </span>
-	
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5036/" class="post-title-link" itemprop="url">题解 JSOI2014 回文串</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-08 00:00:00 / 修改时间：17:43:36" itemprop="dateCreated datePublished" datetime="2020-02-08T00:00:00+08:00">2020-02-08</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OI/" itemprop="url" rel="index">
-                    <span itemprop="name">OI</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index">
-                    <span itemprop="name">数据结构</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/" itemprop="url" rel="index">
-                    <span itemprop="name">字符串</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/" itemprop="url" rel="index">
-                    <span itemprop="name">树形结构</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%9B%9E%E6%96%87%E4%B8%B2/" itemprop="url" rel="index">
-                    <span itemprop="name">回文串</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" itemprop="url" rel="index">
-                    <span itemprop="name">树状数组</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%9B%9E%E6%96%87%E4%B8%B2/%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/" itemprop="url" rel="index">
-                    <span itemprop="name">回文子串</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="题解-JSOI2014-回文串"><a href="#题解-JSOI2014-回文串" class="headerlink" title="题解 JSOI2014 回文串"></a>题解 JSOI2014 回文串</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=5036" target="_blank" rel="noopener">BZOJ</a></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5036/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-        
-  
-  	
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5037/">
+    <link itemprop="mainEntityOfPage" href="https://hastin-blog.cn/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5037/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -380,7 +266,7 @@
   
   	
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5038/">
+    <link itemprop="mainEntityOfPage" href="https://hastin-blog.cn/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5038/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -470,7 +356,85 @@
   
   	
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5039/">
+    <link itemprop="mainEntityOfPage" href="https://hastin-blog.cn/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5034/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="permzf">
+      <meta itemprop="description" content="Hastin的小号">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="permzf">
+    </span>
+	
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5034/" class="post-title-link" itemprop="url">题解 JSOI2014 歌剧表演</a>
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-08 00:00:00 / 修改时间：17:12:00" itemprop="dateCreated datePublished" datetime="2020-02-08T00:00:00+08:00">2020-02-08</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OI/" itemprop="url" rel="index">
+                    <span itemprop="name">OI</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="题解-JSOI2014-歌剧表演"><a href="#题解-JSOI2014-歌剧表演" class="headerlink" title="题解 JSOI2014 歌剧表演"></a>题解 JSOI2014 歌剧表演</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=5034" target="_blank" rel="noopener">BZOJ</a></p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5034/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+        
+  
+  	
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://hastin-blog.cn/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5039/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -566,7 +530,7 @@
   
   	
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5172/">
+    <link itemprop="mainEntityOfPage" href="https://hastin-blog.cn/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5172/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -668,7 +632,7 @@
   
   	
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5173/">
+    <link itemprop="mainEntityOfPage" href="https://hastin-blog.cn/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5173/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -776,7 +740,7 @@
   
   	
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4327/">
+    <link itemprop="mainEntityOfPage" href="https://hastin-blog.cn/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4327/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -872,7 +836,7 @@
   
   	
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4464/">
+    <link itemprop="mainEntityOfPage" href="https://hastin-blog.cn/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4464/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -956,7 +920,7 @@
   
   	
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4465/">
+    <link itemprop="mainEntityOfPage" href="https://hastin-blog.cn/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4467/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -971,7 +935,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4465/" class="post-title-link" itemprop="url">题解 JSOI2013 游戏中的学问</a>
+            <a href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4467/" class="post-title-link" itemprop="url">题解 JSOI2013 数字理论</a>
         </h1>
 
         <div class="post-meta">
@@ -980,10 +944,16 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-02-04 00:00:00 / 修改时间：18:46:47" itemprop="dateCreated datePublished" datetime="2020-02-04T00:00:00+08:00">2020-02-04</time>
+              <time title="创建时间：2020-02-04 00:00:00" itemprop="dateCreated datePublished" datetime="2020-02-04T00:00:00+08:00">2020-02-04</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-02-07 13:43:01" itemprop="dateModified" datetime="2020-02-07T13:43:01+08:00">2020-02-07</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
@@ -1002,8 +972,8 @@
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OI/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E8%AE%A1%E6%95%B0dp/" itemprop="url" rel="index">
-                    <span itemprop="name">计数dp</span>
+                  <a href="/categories/OI/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/%E6%95%B0%E4%BD%8Ddp/" itemprop="url" rel="index">
+                    <span itemprop="name">数位dp</span>
                   </a>
                 </span>
             </span>
@@ -1019,10 +989,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="题解-JSOI2013-游戏中的学问"><a href="#题解-JSOI2013-游戏中的学问" class="headerlink" title="题解 JSOI2013 游戏中的学问"></a>题解 JSOI2013 游戏中的学问</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=4465" target="_blank" rel="noopener">BZOJ</a></p>
+          <h2 id="题解-JSOI2013-数字理论"><a href="#题解-JSOI2013-数字理论" class="headerlink" title="题解 JSOI2013 数字理论"></a>题解 JSOI2013 数字理论</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=4467" target="_blank" rel="noopener">BZOJ</a></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4465/#more" rel="contents">
+              <a class="btn" href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4467/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1046,7 +1016,7 @@
   
   	
   <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4466/">
+    <link itemprop="mainEntityOfPage" href="https://hastin-blog.cn/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4468/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1061,7 +1031,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4466/" class="post-title-link" itemprop="url">题解 JSOI2013 超立方体</a>
+            <a href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4468/" class="post-title-link" itemprop="url">题解 JSOI2013 体育课</a>
         </h1>
 
         <div class="post-meta">
@@ -1072,7 +1042,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-02-04 00:00:00 / 修改时间：19:12:33" itemprop="dateCreated datePublished" datetime="2020-02-04T00:00:00+08:00">2020-02-04</time>
+              <time title="创建时间：2020-02-04 00:00:00 / 修改时间：20:06:20" itemprop="dateCreated datePublished" datetime="2020-02-04T00:00:00+08:00">2020-02-04</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -1103,10 +1073,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="题解-JSOI2013-超立方体"><a href="#题解-JSOI2013-超立方体" class="headerlink" title="　题解 JSOI2013 超立方体"></a>　题解 JSOI2013 超立方体</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=4466" target="_blank" rel="noopener">BZOJ</a></p>
+          <h2 id="题解-JSOI2013-体育课"><a href="#题解-JSOI2013-体育课" class="headerlink" title="题解 JSOI2013 体育课"></a>题解 JSOI2013 体育课</h2><h3 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h3><p><a href="https://www.lydsy.com/JudgeOnline/problem.php?id=4468" target="_blank" rel="noopener">BZOJ</a></p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4466/#more" rel="contents">
+              <a class="btn" href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4468/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
