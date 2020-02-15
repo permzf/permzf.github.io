@@ -1153,7 +1153,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffe530;
+  background: #83b1ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1955,7 +1955,7 @@ pre .javascript .function {
   text-align: center;
 }
 .my_post_copyright {
-  width: 85%;
+  width: 100%;
   max-width: 45em;
   margin: 2.8em auto 0;
   padding: 0.5em 1em;
