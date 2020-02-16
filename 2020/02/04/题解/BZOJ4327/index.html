@@ -315,8 +315,8 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4464/" rel="prev" title="题解 JSOI2013 旅行时的困惑">
-      <i class="fa fa-chevron-left"></i> 题解 JSOI2013 旅行时的困惑
+    <a href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4466/" rel="prev" title="题解 JSOI2013 超立方体">
+      <i class="fa fa-chevron-left"></i> 题解 JSOI2013 超立方体
     </a></div>
       <div class="post-nav-item">
     <a href="/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5173/" rel="next" title="题解 JSOI2014 矩形并">
@@ -426,6 +426,24 @@
       <div class="footer-inner">
         
 
+<!-- 在网页底部添加网站运行时间 -->
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("01/01/2020 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "Run for "+dnum+" Days ";
+        document.getElementById("times").innerHTML = hnum + " Hours " + mnum + " m " + snum + " s";
+    }
+setInterval("createtime()",250);
+</script>
 <div class="copyright">
   
   &copy; 

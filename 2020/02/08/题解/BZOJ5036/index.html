@@ -212,20 +212,14 @@
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index">
-                    <span itemprop="name">数据结构</span>
-                  </a>
-                </span>
-                  ，
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/" itemprop="url" rel="index">
                     <span itemprop="name">字符串</span>
                   </a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/" itemprop="url" rel="index">
-                    <span itemprop="name">树形结构</span>
+                  <a href="/categories/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" itemprop="url" rel="index">
+                    <span itemprop="name">数据结构</span>
                   </a>
                 </span>
                   ，
@@ -236,14 +230,20 @@
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" itemprop="url" rel="index">
-                    <span itemprop="name">树状数组</span>
+                  <a href="/categories/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/" itemprop="url" rel="index">
+                    <span itemprop="name">树形结构</span>
                   </a>
                 </span>
                   ，
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/OI/%E5%AD%97%E7%AC%A6%E4%B8%B2/%E5%9B%9E%E6%96%87%E4%B8%B2/%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2/" itemprop="url" rel="index">
                     <span itemprop="name">回文子串</span>
+                  </a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/OI/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%A0%91%E5%BD%A2%E7%BB%93%E6%9E%84/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/" itemprop="url" rel="index">
+                    <span itemprop="name">树状数组</span>
                   </a>
                 </span>
             </span>
@@ -333,12 +333,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5037/" rel="prev" title="题解 JSOI2014 电信网络">
-      <i class="fa fa-chevron-left"></i> 题解 JSOI2014 电信网络
+    <a href="/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5038/" rel="prev" title="题解 JSOI2014 打兔子">
+      <i class="fa fa-chevron-left"></i> 题解 JSOI2014 打兔子
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5034/" rel="next" title="题解 JSOI2014 歌剧表演">
-      题解 JSOI2014 歌剧表演 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/02/08/%E9%A2%98%E8%A7%A3/BZOJ5037/" rel="next" title="题解 JSOI2014 电信网络">
+      题解 JSOI2014 电信网络 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -444,6 +444,24 @@
       <div class="footer-inner">
         
 
+<!-- 在网页底部添加网站运行时间 -->
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("01/01/2020 00:00:00");
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "Run for "+dnum+" Days ";
+        document.getElementById("times").innerHTML = hnum + " Hours " + mnum + " m " + snum + " s";
+    }
+setInterval("createtime()",250);
+</script>
 <div class="copyright">
   
   &copy; 
