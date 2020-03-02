@@ -25,7 +25,7 @@
 <meta property="og:description" content="题解 JSOI2013 体育课题面BZOJ">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-02-03T16:00:00.000Z">
-<meta property="article:modified_time" content="2020-02-04T12:06:20.391Z">
+<meta property="article:modified_time" content="2020-02-29T09:49:44.382Z">
 <meta property="article:author" content="permzf">
 <meta property="article:tag" content="贪心">
 <meta name="twitter:card" content="summary">
@@ -88,7 +88,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="https://hastin-blog.cn/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4468/" data-id="ck75u82fe0011ehom2mun8nzu" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="https://hastin-blog.cn/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4468/" data-id="ck79u10fs001f1oom8qts1hu5" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -113,8 +113,9 @@
 <p>还是思维不够活跃…</p>
 <h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><p><strong>重申一遍,此做法不够严谨</strong></p>
 <p>首先考虑到如果每次都老实比身高,那这就是个冒泡排序…</p>
-<p>设$b[i]$为每个人的位置标记,JYY的位置为1,前面的位置为0,后面的位置为2.</p>
-<p>然后求出每个人前面标记比他大的人数$f[i]$.</p>
+<p>设$b[i]$为排完序后每个人的位置标记,JYY的位置为1,他前面的位置为0,后面的位置为2.</p>
+<p>其实大概就是一个相对顺序.</p>
+<p>然后求出原来的序列每个人前面 $b[i]$ 比他大的人数$f[i]$.</p>
 <p>显然第$i$个人在前$f[i]$次都不会动.</p>
 <p>考虑最大化JYY站着不动的次数,为$\max(n-K-1,f[m])$.</p>
 <p>(似乎问题就在于我们钦定他系了$K$次鞋带.,但他系了跟没系的结果可能一样..)</p>
@@ -165,10 +166,10 @@
 <nav class="nav-single">
     <h3 class="assistive-text">文章导航</h3>
     
-        <span class="nav-previous"><a href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4467/" rel="prev"><span class="meta-nav">←</span> 题解 JSOI2013 数字理论</a></span>
+        <span class="nav-previous"><a href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4478/" rel="prev"><span class="meta-nav">←</span> 题解 JSOI2013 侦探jyy</a></span>
     
     
-        <span class="nav-next"><a href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4469/" rel="next">题解 JSOI2013 打地鼠 <span class="meta-nav">→</span></a></span>
+        <span class="nav-next"><a href="/2020/02/04/%E9%A2%98%E8%A7%A3/BZOJ4479/" rel="next">题解 JSOI2013 吃货jyy <span class="meta-nav">→</span></a></span>
     
 </nav><!-- .nav-single -->
 
@@ -211,11 +212,11 @@
           </li>
         
           <li>
-            <a href="/2020/02/22/%E9%A2%98%E8%A7%A3/BZOJ4474/">题解 JSOI2015 isomorphism</a>
+            <a href="/2020/02/22/%E9%A2%98%E8%A7%A3/BZOJ4475/">题解 JSOI2015 子集选取</a>
           </li>
         
           <li>
-            <a href="/2020/02/22/%E9%A2%98%E8%A7%A3/BZOJ4475/">题解 JSOI2015 子集选取</a>
+            <a href="/2020/02/22/%E9%A2%98%E8%A7%A3/BZOJ4474/">题解 JSOI2015 isomorphism</a>
           </li>
         
       </ul>
